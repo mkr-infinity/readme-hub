@@ -1,22 +1,46 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="theme-color" content="#140a22" />
-    <meta name="description" content="Revision Master — anime-themed study app for flashcards, formulas and mock tests." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" id="app-favicon" type="image/svg+xml" href="/src/assets/logo.svg" />
-    <link rel="apple-touch-icon" href="/src/assets/logo.svg" />
-    <title>Revision Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>ReadmeHub — Beautiful GitHub README generator</title>
+    <meta name="description" content="ReadmeHub is the README generator developers actually want to open. Pick a bold theme, fill a quick form, and export a beautiful Markdown file in seconds." />
+    <meta name="theme-color" content="#0B0B11" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="ReadmeHub — Beautiful GitHub README generator" />
+    <meta property="og:description" content="Pick a bold theme, fill a quick form, and export a beautiful Markdown file in seconds. 15 themes. No account. No tracking. Free forever." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='6' y='6' width='88' height='88' fill='%234F7BFF' stroke='%23F4F1EA' stroke-width='6'/%3E%3Ctext x='50' y='48' text-anchor='middle' font-family='monospace' font-size='28' font-weight='800' fill='%230E0E12'%3EMD%3C/text%3E%3Cpath d='M30 64 L50 84 L70 64 M50 60 L50 84' stroke='%230E0E12' stroke-width='7' fill='none' stroke-linecap='square'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!-- GitHub Pages SPA routing: decode the path encoded by 404.html -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+        // Also handle ?p= style redirect from 404.html
+        var search = window.location.search;
+        if (search.indexOf('?p=/') === 0 || search.indexOf('&p=/') > -1) {
+          var params = search.slice(1).split('&').reduce(function(o, s) {
+            var kv = s.split('=');
+            o[kv[0]] = kv.slice(1).join('=').replace(/~and~/g, '&');
+            return o;
+          }, {});
+          if (params.p !== undefined) {
+            var url = location.pathname.slice(0, -1) + (params.p || '') +
+              (params.q ? '?' + params.q : '') + (location.hash || '');
+            window.history.replaceState(null, null, url);
+          }
+        }
+      })();
+    </script>
   </head>
-  <body>
+  <body class="dark">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

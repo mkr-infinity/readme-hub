@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadmeHub — Redirecting…</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: hsl(240, 10%, 5%);
+      --fg: hsl(42, 33%, 94%);
+      --primary: hsl(224, 100%, 65%);
+      --accent: hsl(339, 90%, 65%);
+      --card: hsl(240, 8%, 9%);
+      --muted: hsl(42, 10%, 70%);
+    }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrap {
+      text-align: center;
+      max-width: 480px;
+      padding: 2rem;
+    }
+    .logo-box {
+      width: 64px;
+      height: 64px;
+      background: var(--primary);
+      border: 3px solid var(--fg);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .logo-box svg { width: 36px; height: 36px; }
+    .label {
+      font-size: 0.625rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(1.5rem, 5vw, 2.25rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+    }
+    p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: blink 1s step-end infinite;
+      margin-right: 4px;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .card {
+      border: 2px solid var(--fg);
+      background: var(--card);
+      padding: 1.5rem;
+      box-shadow: 6px 6px 0 0 var(--primary);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid var(--fg);
+      background: var(--primary);
+      color: var(--bg);
+      padding: 0.75rem 1.75rem;
+      font-family: inherit;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 1.25rem;
+      box-shadow: 4px 4px 0 0 var(--fg);
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .btn:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 0 var(--fg); }
+    .btn:active { transform: translate(2px,2px); box-shadow: none; }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: hsl(42, 33%, 94%);
+        --fg: hsl(240, 10%, 5%);
+        --card: hsl(42, 33%, 94%);
+      }
+    }
+  </style>
+  <script>
+    // GitHub Pages SPA redirect: encode the full path into query string,
+    // then index.html decodes it and pushes into history.
+    (function() {
+      var l = window.location;
+      var seg = 1;
+      var path = l.pathname.slice(1).split('/').slice(seg).join('/');
+      // If there's a real sub-path (not just the 404 page itself), redirect silently.
+      if (path) {
+        var dest =
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + seg).join('/') +
+          '/?p=/' + path.replace(/&/g, '~and~') +
+          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        l.replace(dest);
+      }
+      // Otherwise fall through and show the 404 UI below.
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-box">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="6" width="88" height="88" fill="hsl(224,100%,65%)" stroke="hsl(42,33%,94%)" stroke-width="6"/>
+        <text x="50" y="46" text-anchor="middle" font-family="monospace" font-size="26" font-weight="800" fill="hsl(240,10%,5%)">MD</text>
+        <path d="M30 62 L50 80 L70 62 M50 58 L50 80" stroke="hsl(240,10%,5%)" stroke-width="7" fill="none" stroke-linecap="square"/>
+      </svg>
+    </div>
+
+    <div class="card">
+      <div class="label"><span class="dot"></span> ReadmeHub &mdash; 404</div>
+      <h1>Page not found.</h1>
+      <p>
+        This page doesn't exist, or you may have followed a broken link.
+        Heading back home now&hellip;
+      </p>
+      <a class="btn" href="/">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="bevel">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        Go to Home
+      </a>
+    </div>
+
+    <div style="margin-top:1.5rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--muted)">
+      README<span style="color:var(--primary)">HUB</span>
+    </div>
+  </div>
+</body>
+</html>

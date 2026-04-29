@@ -1,192 +1,424 @@
 <div align="center">
-  <img src="assets/logo.svg" width="160" height="160" alt="Revision Master Logo">
-  <h1> Revision Master </h1>
-  <p align="center">
-    <b>The Anime-Themed Companion for Exam Excellence</b><br>
-    <i>A high-performance, beautiful and intuitive study app — flashcards, formulas, mock tests and AI-generated study material, wrapped in a fun manga aesthetic.</i>
-  </p>
 
-  <div align="center">
-    <img src="https://img.shields.io/badge/version-2.0.0-ff5c93?style=for-the-badge" alt="Version">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
-    <img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-    <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
-    <img src="https://img.shields.io/badge/Tailwind-4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
-    <img src="https://img.shields.io/badge/Capacitor-8-119EFF?style=for-the-badge&logo=capacitor&logoColor=white" alt="Capacitor">
-  </div>
-</div>
+<img src="./public/favicon.svg" width="90" alt="ReadmeHub logo" />
 
-<br>
+# ReadmeHub
 
----
-## 📲 Download the App
+### *The README generator developers actually want to open.*
 
-<div align="center">
+[![Open Source](https://img.shields.io/badge/Open-Source-22c55e?style=for-the-badge)](https://github.com/mkr-infinity/readme-hub)
+[![License: MIT](https://img.shields.io/badge/License-MIT-3b82f6?style=for-the-badge)](LICENSE)
+[![Free Forever](https://img.shields.io/badge/Free-Forever-ec4899?style=for-the-badge)](https://github.com/mkr-infinity/readme-hub)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/mkr-infinity/readme-hub/pulls)
 
-<a href="https://github.com/mkr-infinity/Revision-Master/releases/latest">
-  <img src="https://img.shields.io/badge/⬇️%20Download%20APK-Latest%20v2.0.0-ff5c93?style=for-the-badge&logo=android" />
-</a>
+[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-<a href="https://github.com/mkr-infinity/Revision-Master/releases">
-  <img src="https://img.shields.io/badge/🚀%20All%20Releases-Browse-success?style=for-the-badge&logo=github" />
-</a>
+**[Live Demo](https://mkr-infinity.github.io/readme-hub)** &middot; **[Report a Bug](https://github.com/mkr-infinity/readme-hub/issues/new?template=bug_report.md)** &middot; **[Request a Feature](https://github.com/mkr-infinity/readme-hub/issues/new?template=feature_request.md)**
 
 </div>
 
-### 📌 Installation Steps
-1. Download the APK file from the latest release.
-2. On your Android device, enable **Install from Unknown Sources**.
-3. Open the APK and install.
-4. Launch the app — you'll start at the onboarding flow on first run. 🎉
+---
+
+## What is ReadmeHub?
+
+**ReadmeHub** is a beautiful, fast, fully **client-side** GitHub README generator. No server, no sign-up, no telemetry — everything runs in your browser and your data is saved locally so you never lose a draft.
+
+Pick from **15 structurally distinct themes**, fill out a smart guided form, and export a polished Markdown file in seconds. Supports both **project READMEs** and **GitHub profile READMEs** from one place.
 
 ---
 
-## ✨ What's New in v2.0.0 — Anime Edition
+## Features
 
-- Full anime / manga aesthetic across every screen and popup.
-- Six new themes: **Sakura Bloom · Cloud Nine · Sunset Magic · Midnight Manga · Cyber Tokyo · Forest Spirit**.
-- Chibi mascot, speech bubbles, manga panels, sparkle backgrounds and bold "anime-pop" typography.
-- New **Use system default font** option in Settings (revert to your device's default font).
-- **Skip onboarding** button now visible on every step — instant default profile.
-- Formulas tile on Home now opens the Cards screen on the Formulas tab.
-- Performance: code-split vendor chunks, faster route loading, smoother animations.
-- All Japanese characters removed — English-only copy throughout.
-
-See the full [`CHANGELOG.txt`](./CHANGELOG.txt) for everything.
-
----
-
-## 🌟 Why Revision Master?
-
-In a world full of distractions, **Revision Master** is built to keep you focused. It is precision-engineered for students who value their time, their data, and a touch of fun.
-
-### 🛡️ Privacy Focused (Local-First)
-Your study habits and data are yours alone. Revision Master follows a **local-first** architecture:
-- **Zero cloud storage** — subjects, flashcards and progress live on your device.
-- **No tracking** — no analytics, no cookies, no hidden trackers.
-- **Full control** — export your entire database as JSON anytime.
-
-### ⚡ Built for Speed
-- **Native feel** — Capacitor wrapper, mobile-first viewport, safe-area aware layout.
-- **Offline-ready** — core features work without an internet connection.
-- **Code-split bundle** — react, framer-motion, recharts and pdf libs are loaded on demand.
-- **AI-powered** — generate flashcards and explanations with Gemini, OpenAI, Grok or Claude (your key, your choice).
+| | Feature | Details |
+|---|---|---|
+| 🎨 | **15 unique themes** | Each theme re-arranges the markdown *structure* — not just colors. Professional, Terminal, Brutalist, Cyberpunk, API Reference, and more. |
+| 👤 | **Two modes** | Generate a **Project README** or a **GitHub Profile README** with tailored form fields for each |
+| ✨ | **Live preview** | Toggle between GitHub-style (light) rendering and dark editor mode side-by-side |
+| 🖥️ | **Resizable split editor** | Drag the divider to give more space to code or preview — your choice |
+| 🧩 | **90+ tech logos** | Auto-categorized badges: Languages, Frameworks, Databases, DevOps, AI, Tools — click to add |
+| 📊 | **GitHub stats widgets** | readme-stats, top-langs, streak, and trophy widgets for profile READMEs |
+| 💾 | **Local persistence** | Everything saves to `localStorage` automatically — refresh anytime, pick up where you left off |
+| 📱 | **Fully responsive** | Tabbed editor / preview / themes on mobile with no hidden overflow |
+| 📋 | **Copy or download** | Clipboard copy or `.md` file download with in-app step-by-step guidance |
+| 🚫 | **Zero backend** | 100% client-side, 100% free, MIT-licensed, forever |
 
 ---
 
-## 🎨 Powerful Features
+## Themes
 
-| Feature | Description |
-|-------|-------------|
-| <img src="assets/features/subjects.svg" width="40"> **Smart Decks** | Organise study material with custom themes, gradients and progress tracking |
-| <img src="assets/features/flashcards.svg" width="40"> **Active Recall** | Interactive flashcards with text, images, formulas and notes |
-| <img src="assets/features/tests.svg" width="40"> **Mock Tests** | Build timed tests that simulate real exam conditions |
-| <img src="assets/features/ai.svg" width="40"> **AI Study Buddy** | Generate cards, explanations and tests with your favourite LLM |
-| <img src="assets/features/analytics.svg" width="40"> **Deep Insights** | Streaks, XP, level-ups, heatmaps and per-deck stats |
-| <img src="assets/features/pdf.svg" width="40"> **PDF Export** | Export decks as PDFs for offline study |
+| # | Name | Vibe |
+|---|---|---|
+| 01 | **Professional** | Restrained, executive, portfolio-grade |
+| 02 | **Terminal** | Green-on-black, monospaced, prompt-driven |
+| 03 | **Anime Kawaii** | Pastel sparkle, animated banner, kawaii dividers |
+| 04 | **Brutalist** | Massive type, raw blocks, high contrast |
+| 05 | **Editorial** | Magazine spread, drop caps, serif rhythm |
+| 06 | **Neon Synthwave** | Dark base, glowing cyan and magenta |
+| 07 | **Cyberpunk** | Glitchy, system-overrides, scanline aesthetic |
+| 08 | **Pastel Notebook** | Soft, organised, dotted-grid notebook vibe |
+| 09 | **Origami Paper** | Folded geometry, monochrome restraint |
+| 10 | **Botanical** | Sage, clay, earthy and grounded |
+| 11 | **Magazine Cover** | Glossy cover, table of contents, footnotes |
+| 12 | **API Reference** | Endpoint blocks, request/response, parameter tables |
+| 13 | **Resume / CV** | Career-style, hiring-ready, recruiter-friendly |
+| 14 | **Changelog** | Versioned releases, semver, breaking-change alerts |
+| 15 | **Minimal Zen** | Whitespace, nothing extra, signal only |
 
 ---
 
-## 📦 Getting Started
+## Quick Start
 
-### 🌐 Web development
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18 or higher
+- [pnpm](https://pnpm.io/) v8 or higher (`npm install -g pnpm`)
+
+### Install & run
 
 ```bash
-git clone https://github.com/mkr-infinity/Revision-Master.git
-cd Revision-Master
-npm install
-npm run dev          # http://localhost:5000
+# 1. Clone the repo
+git clone https://github.com/mkr-infinity/readme-hub.git
+cd readme-hub
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Start the dev server
+pnpm run dev
 ```
 
-### 📱 Build the Android APK with Capacitor
+Open the URL shown in your terminal (usually `http://localhost:5173`) — that's it.
 
-You'll need: **Node 18+**, **JDK 17**, **Android Studio** (with Android SDK 34+), and the Android `ANDROID_HOME` env var configured.
+> Prefer `npm` or `yarn`? Both work too — just swap `pnpm` for `npm` or `yarn` in any command.
+
+---
+
+## How to Use
+
+### Step 1 — Pick a theme
+
+Go to **Templates** and browse the 15 options. Each card shows a miniature preview of the README structure. Click **"Use this theme"** to start with that layout, or start from the Form and apply a theme later.
+
+### Step 2 — Fill the form
+
+The smart form adapts to your README type:
+
+- **Project README** — fill in your project name, tagline, description, features, installation steps, usage examples, contributing guidelines, license, and links.
+- **GitHub Profile README** — fill in your bio, what you're working on, what you're learning, social links, and toggle GitHub stats widgets.
+
+Click the **Tech Picker** section to browse and add 90+ technology logos as badges — no manual badge URL typing.
+
+### Step 3 — Edit & export
+
+The Editor gives you:
+
+- **Left panel** — raw Markdown source you can freely edit
+- **Right panel** — live rendered preview (toggle between GitHub-style light or dark editor mode)
+- **Resizable divider** — drag left or right to expand whichever side you need
+
+When you're happy, click **Copy** to paste it into GitHub's web editor, or **Download** to get a `README.md` file.
+
+### Step 4 — Ship it to GitHub
+
+**Project README** — put `README.md` in the root of your repo and commit:
 
 ```bash
-# 1. Install dependencies
-npm install
-
-# 2. Build the web bundle and sync into the Android project
-npm run cap:sync
-
-# 3a. Build a debug APK (no signing required)
-npm run android:debug
-# → android/app/build/outputs/apk/debug/app-debug.apk
-
-# 3b. Or build a release APK (you'll need a keystore configured in
-#     android/app/build.gradle for the `release` signing config)
-npm run android:build
-# → android/app/build/outputs/apk/release/app-release.apk
+git add README.md
+git commit -m "docs: add README"
+git push
 ```
 
-Useful one-shot commands:
-
-| Command | What it does |
-|---|---|
-| `npm run cap:sync` | Build the web app and sync `dist/` into Android |
-| `npm run cap:open` | Open the Android project in Android Studio |
-| `npm run cap:run` | Build, sync and launch on a connected device / emulator |
-| `npm run android:debug` | Build a debug APK |
-| `npm run android:build` | Build a release APK |
-
-### 🔑 Optional: Gemini API key
-
-Set `GEMINI_API_KEY` in a `.env` file (or in Replit's secrets) to enable the built-in AI provider without users having to bring their own key:
-
-```env
-GEMINI_API_KEY=your-key-here
-```
-
-Users can also bring their own key (Gemini, OpenAI, Grok or Claude) directly in Settings → AI.
+**Profile README** — create a repo named **exactly your GitHub username** (e.g. `mkr-infinity/mkr-infinity`). GitHub automatically pins it to your profile page.
 
 ---
 
-## 🧱 Project Structure
+## Deploy
+
+### Netlify (recommended for custom domains)
+
+The `netlify.toml` at the repo root handles everything. Just connect the repo to Netlify and it will use:
 
 ```
-src/
-  assets/            # logos, mascot SVG, feature icons
-  components/        # Layout, Chatbot, modals, providers
-  context/           # AppContext (themes, user, decks, tests)
-  screens/           # Home, Flashcards, MockTests, Stats, Settings, About, Onboarding
-  utils/             # AI client, helpers
-  index.css          # Tailwind v4 + anime theme palettes + utility classes
-android/             # Capacitor Android project
-capacitor.config.ts  # Capacitor app config
-vite.config.ts       # Vite + PWA + manualChunks for fast loads
+Build command:  pnpm run build:netlify
+Publish dir:    dist/public
+```
+
+SPA routing is handled via the redirect rule in `netlify.toml`.
+
+### GitHub Pages
+
+```bash
+# Build with the /readme-hub/ base path (matches your repo name)
+pnpm run build:gh-pages
+
+# The output is in dist/public/
+# Deploy to GitHub Pages (Actions, gh-pages branch, or /docs folder)
+```
+
+The `public/404.html` included in the project automatically handles SPA routing — no blank pages on direct URL access or refresh.
+
+> If your repo name is **not** `readme-hub`, edit the `build:gh-pages` script in `package.json` and set `BASE_PATH=/your-repo-name/`.
+
+#### GitHub Actions example
+
+Create `.github/workflows/deploy.yml`:
+
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with: { version: 8 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: pnpm }
+      - run: pnpm install
+      - run: pnpm run build:gh-pages
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist/public }
+      - uses: actions/deploy-pages@v4
+        id: deployment
+```
+
+In your repo settings, go to **Settings → Pages → Build and deployment → Source: GitHub Actions**. Your site will be live at `https://<your-username>.github.io/readme-hub/` after the first successful run.
+
+---
+
+## Build on your phone with Termux
+
+You can build, run, and push ReadmeHub entirely from an Android phone using [Termux](https://termux.dev/) — no laptop required.
+
+### 1. Install Termux
+
+Install Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/) (the Play Store version is outdated and broken). Open it and run:
+
+```bash
+pkg update -y && pkg upgrade -y
+```
+
+### 2. Install Node.js, git, and pnpm
+
+```bash
+pkg install -y nodejs-lts git
+npm install -g pnpm
+```
+
+Verify everything is installed:
+
+```bash
+node -v   # should print v18.x or v20.x
+pnpm -v   # should print 8.x or higher
+git --version
+```
+
+### 3. Give Termux access to your storage *(optional)*
+
+Only needed if you want files visible in your phone's file manager:
+
+```bash
+termux-setup-storage
+```
+
+### 4. Clone, install, and run
+
+```bash
+git clone https://github.com/mkr-infinity/readme-hub.git
+cd readme-hub
+pnpm install
+pnpm run dev
+```
+
+When the dev server starts, open **`http://localhost:5173`** in your phone's browser — the app loads right on your device.
+
+> If port 5173 is busy, run `PORT=4000 pnpm run dev` and open `http://localhost:4000` instead.
+
+### 5. Build for production *(optional)*
+
+```bash
+# Standard build
+pnpm run build
+
+# Or build for GitHub Pages (with /readme-hub/ base path)
+pnpm run build:gh-pages
+```
+
+The output lands in `dist/public/`.
+
+### 6. Push your changes to GitHub
+
+First-time setup — tell git who you are:
+
+```bash
+git config --global user.name  "Your Name"
+git config --global user.email "you@example.com"
+```
+
+Create a [GitHub Personal Access Token](https://github.com/settings/tokens?type=beta) (fine-grained, with **Contents: Read and write** on the repo). Then:
+
+```bash
+git add .
+git commit -m "feat: my changes from Termux"
+git push
+```
+
+When git asks for your password, **paste the token** (not your GitHub password). Termux will save it for next time if you install the credential helper:
+
+```bash
+pkg install -y gh
+gh auth login   # easier alternative — handles tokens for you
+```
+
+### Termux tips
+
+- **Keep Termux awake while building** — Android may kill it in the background. Run `termux-wake-lock` (install `termux-api` first) to prevent that.
+- **Low on RAM?** Close other apps before `pnpm install`. If installs fail with out-of-memory errors, run `NODE_OPTIONS=--max-old-space-size=1024 pnpm install`.
+- **Editing files** — install a CLI editor with `pkg install -y nano` (easy) or `pkg install -y vim` (powerful).
+- **Update later** — `pkg update && pkg upgrade && npm i -g pnpm@latest`.
+
+---
+
+## Project Structure
+
+```
+readme-hub/
+├── public/
+│   ├── favicon.svg          # App icon
+│   ├── 404.html             # SPA routing fallback for GitHub Pages
+│   └── opengraph.jpg        # Social preview image
+├── src/
+│   ├── components/
+│   │   ├── layout.tsx       # Nav, footer, cursor follower
+│   │   ├── preview.tsx      # Markdown renderer (GitHub + dark mode)
+│   │   ├── tech-picker.tsx  # 90+ tech logo selector
+│   │   └── ui/              # shadcn/ui component library
+│   ├── lib/
+│   │   ├── store.ts         # State management + localStorage
+│   │   ├── templates.ts     # 15 theme generators
+│   │   └── tech-icons.ts    # Tech logo registry
+│   ├── pages/
+│   │   ├── home.tsx         # Landing page
+│   │   ├── templates.tsx    # Theme gallery
+│   │   ├── form.tsx         # Multi-step form
+│   │   ├── editor.tsx       # Split editor + preview
+│   │   └── not-found.tsx    # 404 page
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+├── tailwind / tsconfig / package.json
+└── netlify.toml             # Netlify deploy config + SPA redirect
 ```
 
 ---
 
-## 💖 Support
+## Tech Stack
 
-<p align="center">
-  <a href="https://buymeacoffee.com/mkr_infinity" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="55" alt="Buy Me A Coffee"/>
-  </a>
-</p>
+<details>
+<summary><b>Languages</b></summary>
 
-<p align="center">
-  If you like <b>Revision Master</b>, please consider supporting 🙌
-</p>
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-<p align="center">
-  <a href="https://supportmkr.netlify.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Other%20Ways%20to%20Support-Click%20Here-blue?style=for-the-badge"/>
-  </a>
-</p>
+</details>
+
+<details>
+<summary><b>Framework & UI</b></summary>
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=flat-square&logo=shadcnui&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Wouter](https://img.shields.io/badge/Wouter-000000?style=flat-square)
+
+</details>
+
+<details>
+<summary><b>Tooling & Libraries</b></summary>
+
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
+![react-markdown](https://img.shields.io/badge/react--markdown-000000?style=flat-square)
+![remark-gfm](https://img.shields.io/badge/remark--gfm-000000?style=flat-square)
+
+</details>
 
 ---
 
-## 📄 License
+## Contributing
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+All contributions are welcome — whether it's a bug fix, a new theme, additional tech logos, or a UI improvement.
+
+### How to contribute
+
+1. **Fork** the repo and create a branch from `main`:
+
+   ```bash
+   git checkout -b feat/my-new-theme
+   ```
+
+2. **Install** dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Make your changes** and test locally:
+
+   ```bash
+   pnpm --filter @workspace/readme-hub run dev
+   ```
+
+4. **Open a Pull Request** — describe what you changed and why.
+
+### Contribution ideas
+
+- **New themes** — the bar is "structurally different", not just a color swap. Each template in `lib/templates.ts` exports a `generate(data: FormData): string` function.
+- **More tech logos** — add entries to `lib/tech-icons.ts` with `slug`, `name`, `color`, and `category`.
+- **Accessibility improvements** — keyboard navigation, ARIA labels, contrast ratios.
+- **Translations** — the UI strings are not yet extracted for i18n, but PRs that add that structure are welcome.
+- **Bug reports** — open an [issue](https://github.com/mkr-infinity/readme-hub/issues/new) with steps to reproduce.
+
+### Guidelines
+
+- Keep PRs focused — one feature or fix per PR.
+- Open an [issue](https://github.com/mkr-infinity/readme-hub/issues/new) first for anything bigger than a typo so we can discuss direction.
+- Code style: TypeScript, no `any` unless justified, Tailwind classes preferred over inline styles.
+
+---
+
+## License
+
+[MIT](LICENSE) — do whatever you like, just be nice. Attribution back to this repo is appreciated but not required.
 
 ---
 
 <div align="center">
-  <p>Crafted with passion by <b>Mohammad Kaif Raja</b></p>
-  <a href="https://github.com/mkr-infinity">
-    <img src="https://img.shields.io/github/followers/mkr-infinity?label=Follow%20@mkr-infinity&style=social" alt="Follow mkr-infinity">
-  </a>
+
+[![Star on GitHub](https://img.shields.io/badge/Star_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mkr-infinity/readme-hub)
+[![Follow @mkr-infinity](https://img.shields.io/badge/Follow_@mkr--infinity-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mkr-infinity/)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/mkr_infinity)
+
+<sub>Built with ☕ and stubbornness by <a href="https://github.com/mkr-infinity/">@mkr-infinity</a></sub>
+
 </div>

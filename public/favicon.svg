@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Subtle gradient for a "beautiful" premium feel -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5A86FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4F7BFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background: Rounded Square with Border -->
+  <rect x="4" y="4" width="120" height="120" rx="24" ry="24" fill="url(#bgGradient)" stroke="#F4F1EA" stroke-width="6"/>
+  
+  <!-- "MD" Text: Centered and Bold -->
+  <text x="64" y="58" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" fill="#0E0E12" style="letter-spacing: 1px;">MD</text>
+  
+  <!-- Stylized Downward Arrow: Clean and Thick -->
+  <g stroke="#0E0E12" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 70 L64 100" />
+    <path d="M40 80 L64 100 L88 80" />
+  </g>
+</svg>
