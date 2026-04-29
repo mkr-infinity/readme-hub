@@ -16,7 +16,7 @@
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-**[Live Demo](https://mkr-infinity.github.io/readme-hub)** &middot; **[Report a Bug](https://github.com/mkr-infinity/readme-hub/issues/new?template=bug_report.md)** &middot; **[Request a Feature](https://github.com/mkr-infinity/readme-hub/issues/new?template=feature_request.md)**
+**[Readme Generator is Live](https://mkr-infinity.github.io/readme-hub)**
 
 </div>
 
