@@ -135,18 +135,6 @@ git push
 
 ---
 
-## Deploy
-
-### Netlify (recommended for custom domains)
-
-The `netlify.toml` at the repo root handles everything. Just connect the repo to Netlify and it will use:
-
-```
-Build command:  pnpm run build:netlify
-Publish dir:    dist/public
-```
-
-SPA routing is handled via the redirect rule in `netlify.toml`.
 
 ### GitHub Pages
 
@@ -202,99 +190,6 @@ In your repo settings, go to **Settings → Pages → Build and deployment → S
 
 ---
 
-## Build on your phone with Termux
-
-You can build, run, and push ReadmeHub entirely from an Android phone using [Termux](https://termux.dev/) — no laptop required.
-
-### 1. Install Termux
-
-Install Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/) (the Play Store version is outdated and broken). Open it and run:
-
-```bash
-pkg update -y && pkg upgrade -y
-```
-
-### 2. Install Node.js, git, and pnpm
-
-```bash
-pkg install -y nodejs-lts git
-npm install -g pnpm
-```
-
-Verify everything is installed:
-
-```bash
-node -v   # should print v18.x or v20.x
-pnpm -v   # should print 8.x or higher
-git --version
-```
-
-### 3. Give Termux access to your storage *(optional)*
-
-Only needed if you want files visible in your phone's file manager:
-
-```bash
-termux-setup-storage
-```
-
-### 4. Clone, install, and run
-
-```bash
-git clone https://github.com/mkr-infinity/readme-hub.git
-cd readme-hub
-pnpm install
-pnpm run dev
-```
-
-When the dev server starts, open **`http://localhost:5173`** in your phone's browser — the app loads right on your device.
-
-> If port 5173 is busy, run `PORT=4000 pnpm run dev` and open `http://localhost:4000` instead.
-
-### 5. Build for production *(optional)*
-
-```bash
-# Standard build
-pnpm run build
-
-# Or build for GitHub Pages (with /readme-hub/ base path)
-pnpm run build:gh-pages
-```
-
-The output lands in `dist/public/`.
-
-### 6. Push your changes to GitHub
-
-First-time setup — tell git who you are:
-
-```bash
-git config --global user.name  "Your Name"
-git config --global user.email "you@example.com"
-```
-
-Create a [GitHub Personal Access Token](https://github.com/settings/tokens?type=beta) (fine-grained, with **Contents: Read and write** on the repo). Then:
-
-```bash
-git add .
-git commit -m "feat: my changes from Termux"
-git push
-```
-
-When git asks for your password, **paste the token** (not your GitHub password). Termux will save it for next time if you install the credential helper:
-
-```bash
-pkg install -y gh
-gh auth login   # easier alternative — handles tokens for you
-```
-
-### Termux tips
-
-- **Keep Termux awake while building** — Android may kill it in the background. Run `termux-wake-lock` (install `termux-api` first) to prevent that.
-- **Low on RAM?** Close other apps before `pnpm install`. If installs fail with out-of-memory errors, run `NODE_OPTIONS=--max-old-space-size=1024 pnpm install`.
-- **Editing files** — install a CLI editor with `pkg install -y nano` (easy) or `pkg install -y vim` (powerful).
-- **Update later** — `pkg update && pkg upgrade && npm i -g pnpm@latest`.
-
----
-
 ## Project Structure
 
 ```
@@ -302,7 +197,7 @@ readme-hub/
 ├── public/
 │   ├── favicon.svg          # App icon
 │   ├── 404.html             # SPA routing fallback for GitHub Pages
-│   └── opengraph.jpg        # Social preview image
+│
 ├── src/
 │   ├── components/
 │   │   ├── layout.tsx       # Nav, footer, cursor follower
